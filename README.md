@@ -1,59 +1,109 @@
-<<<<<<< HEAD
-# Gluco-
-Empowering patients with technology to manage Type 1 Diabetes effectively, track sugar levels, log insulin, gain awareness, and get personalized care.
-=======
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Type 1 Diabetes Management Platform
 
-Currently, two official plugins are available:
+> Empowering patients with technology to manage Type 1 Diabetes effectively, track sugar levels, log insulin, gain awareness, and get personalized care.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📊 **Real-time Sugar Level Tracker**  
+  Enter and visualize your sugar levels on a dynamic graph.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- 💉 **Insulin Log & Dosage Recommendation**  
+  Track insulin usage and get AI-suggested next doses based on current levels.
+
+- 📰 **Awareness & News**  
+  Stay updated with new research, tips, and awareness programs.
+
+- 🧠 **Self-Assessment Quiz**  
+  Assess your risk or awareness with an expanding set of diagnostic questions.
+
+- 🥗 **Food Recommendations**  
+  Get diet suggestions: what to eat, and what to avoid.
+
+- 👤 **User Types**  
+  Separate flows and guidance for:
+  - Newly Diagnosed
+  - Existing Patients
+
+- 🩺 **Comorbid Disease Info**  
+  Learn about diseases commonly associated with Type 1 Diabetes.
+
+- 🗺️ **Doctor Finder (Google Maps Integration)**  
+  Automatically shows nearby diabetes specialists based on your updated location.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category         | Tech Used                          |
+|------------------|-------------------------------------|
+| Frontend         | React.js, Tailwind CSS              |
+| Backend          | Firebase Firestore, Firebase Auth   |
+| Maps             | Google Maps API                     |
+| AI & Logic       | Custom logic for dosage & food tips |
+| UI Tools         | Canva, Figma (for design mockups)   |
+
+---
+
+## 📷 Screenshots
+
+> *(Add screenshots of Dashboard, Quiz, Awareness, Map, etc.)*
+
+---
+
+## 📂 Folder Structure
+
+```
+project-root/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── utils/
+│   └── App.js
+├── .env
+├── package.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 How to Run Locally
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+git clone https://github.com/your-username/diabetes-management-app.git
+cd diabetes-management-app
+npm install
+npm start
 ```
->>>>>>> cc23389 (first)
+
+> Ensure you set up your Firebase and Maps API keys in the `.env` file.
+
+---
+
+## 🧑‍💻 Contributing
+
+Pull requests are welcome! If you want to contribute:
+1. Fork the repo
+2. Create your branch (`git checkout -b feature-name`)
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgments
+
+- Google Health Resources  
+- Firebase by Google  
+- Open Innovation for a Better Tomorrow – Submission  
