@@ -146,7 +146,7 @@ export default function Awareness() {
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Video {index + 1}
+                video {index + 1}
               </button>
             ))}
           </div>
