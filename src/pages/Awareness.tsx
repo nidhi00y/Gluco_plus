@@ -136,19 +136,20 @@ export default function Awareness() {
             <p className="text-gray-600">{videos[currentVideoIndex].description}</p>
           </div>
           <div className="flex space-x-4">
-            {videos.map((video, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentVideoIndex(index)}
-                className={`px-4 py-2 rounded-md ${
-                  currentVideoIndex === index
-                    ? 'bg-primary-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                video {index + 1}
-              </button>
-            ))}
+            {videos.map((_, index) => (
+  <button
+    key={index}
+    onClick={() => setCurrentVideoIndex(index)}
+    className={`px-4 py-2 rounded-md ${
+      currentVideoIndex === index
+        ? 'bg-primary-600 text-white'
+        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+    }`}
+  >
+    Video {index + 1}
+  </button>
+))}
+
           </div>
         </div>
       </motion.div>
